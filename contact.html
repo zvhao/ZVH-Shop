@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZVH Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <div class="app">
+
+        <!-- header -->
+        <header class="header">
+            <div class="grid wide">
+                <div class="box-header">
+                    <div class="row align-items-center">
+                        <div class="header-logo col-2">
+                            <a href="index.html" class="logo-link">
+                                <img src="assets/img/logo-removebg.png" alt="" class="logo-img">
+                            </a>
+                        </div>
+                        <div class="header-mid col-8">
+                            <div class="menu-top">
+                                <ul class="list-top d-flex p-2 list-unstyled">
+                                    <li class="list-top-item header-hotline">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span class="font-weight-bold">HOTLINE:</span>
+                                        <a href="tel:0938744376">0938744376</a>
+                                    </li>
+                                    <li class="list-top-item header-search">
+                                        <form action="" method="get" class="header-search-form input-group">
+                                            <input type="text" class="input-search form-control"
+                                                placeholder="Tìm sản phẩm...">
+                                            <button class="btn-search btn" type="submit">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </button>
+
+                                            <!-- history search -->
+                                            <div class="header-search-history">
+                                                <h3 class="header-search-history-heading">TÌM KIẾM NHIỀU NHẤT</h3>
+                                                <ul class="header-search-history-list">
+                                                    <li class="header-search-hisroty-item">
+                                                        <a href="">Vợt cầu lông</a>
+                                                    </li>
+                                                    <li class="header-search-hisroty-item">
+                                                        <a href="">Quả cầu lông</a>
+                                                    </li>
+                                                    <li class="header-search-hisroty-item">
+                                                        <a href="">Quấn cán cầu lông</a>
+                                                    </li>
+                                                    <li class="header-search-hisroty-item">
+                                                        <a href="">Đồng phục cầu lông</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-right col-2">
+                            <div class="header-item header-account">
+                                <a href="#" class="a-header-right header-account-link">
+                                    <span class="box-icon">
+                                        <i class="fa-solid fa-user"></i>
+                                    </span>
+                                    <span class="item-title">TÀI KHOẢN</span>
+                                    <ul class="header-account-option">
+                                        <li class="option-select">
+                                            <a class="a-option" href="login-registration.html">
+                                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                                Đăng nhập</a>
+                                        </li>
+                                        <li class="option-select">
+                                            <a class="a-option" href="">
+                                                <i class="fa-solid fa-user-plus"></i>
+                                                Đăng ký</a>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </div>
+                            <div class="header-item header-cart">
+                                <a href="#" class="a-header-right header-cart-link">
+                                    <span class="box-icon">
+                                        <i class="fa-solid fa-cart-arrow-down"></i>
+                                    </span>
+                                    <span class="item-title">GIỎ HÀNG</span>
+
+                                    <span class="header-cart-notice">0</span>
+
+                                    <!-- No cart .header-no-cart-->
+                                    <div class="header-cart-list .header-no-cart">
+                                        <img src="./assets/img/no-cart.png" alt="" class="header-no-cart-img">
+                                        <span class="header-no-cart-msg">
+                                            Chưa có sản phẩm
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- navbar -->
+            <nav class="main-menu bg-main">
+                <div class="container">
+                    <ul class="nav-list list-unstyled d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item header-has-menu-product">
+                            <a class="nav-link" href="product.html">SẢN PHẨM
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <!-- menu-product -->
+                            <div class="header-menu-product p-4">
+                                <div class="header-menu-product-list">
+                                    <ul class="row d-flex flex-wrap">
+                                        <li class="col header-product-list">
+                                            <a class="header-heading-product" href="">VỢT CẦU LÔNG</a>
+                                            <ul class="level1">
+                                                <li class="level2">
+                                                    <a href="">Vợt cầu lông Yonex</a>
+                                                </li>
+                                                <li class="level2">
+                                                    <a href="">Vợt cầu lông Victor</a>
+                                                </li>
+                                                <li class="level2">
+                                                    <a href="">Vợt cầu lông Lining</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="col header-product-list">
+                                            <a class="header-heading-product" href="">GIÀY CẦU LÔNG</a>
+                                            <ul class="level1">
+                                                <li class="level2">
+                                                    <a href="">Giày cầu lông Yonex</a>
+                                                </li>
+                                                <li class="level2">
+                                                    <a href="">Giày cầu lông Victor</a>
+                                                </li>
+                                                <li class="level2">
+                                                    <a href="">Giày cầu lông Lining</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="col header-product-list">
+                                            <a class="header-heading-product" href="">ĐỒNG PHỤC CẦU LÔNG</a>
+                                            <ul class="level1">
+                                                <li class="level2">
+                                                    <a href="">Đồng phục cầu lông Yonex</a>
+                                                </li>
+                                                <li class="level2">
+                                                    <a href="">Đồng phục cầu lông Victor</a>
+                                                </li>
+                                                <li class="level2">
+                                                    <a href="">Đồng phục cầu lông Lining</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="col header-product-list">
+                                            <a class="header-heading-product" href="">TÚI ĐỰNG CẦU LÔNG</a>
+                                            <ul class="level1">
+                                                <li class="level2">
+                                                    <a href="">Túi đựng cầu lông Yonex</a>
+                                                </li>
+                                                <li class="level2">
+                                                    <a href="">Túi đựng cầu lông Victor</a>
+                                                </li>
+                                                <li class="level2">
+                                                    <a href="">Túi đựng cầu lông Lining</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="col header-product-list">
+                                            <a class="header-heading-product" href="">PHỤ KIỆN CẦU LÔNG</a>
+                                            <ul class="level1">
+                                                <li class="level2">
+                                                    <a href="">Quả cầu lông</a>
+                                                </li>
+                                                <li class="level2">
+                                                    <a href="">Quấn cán cầu lông</a>
+                                                </li>
+                                                <li class="level2">
+                                                    <a href="">Bình nước cầu lông</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="news.html">TIN TỨC</a></li>
+                        <li class="nav-item has-menu-guide">
+                            <a class="nav-link" href="guide.html">HƯỚNG DẪN
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+
+                            <div class="guide-list">
+                                <ul class="">
+                                    <li><a class="" href="">Hướng dẫn mua hàng và thanh toán</a></li>
+                                    <li><a class="" href="">Hướng dẫn sử dụng dụng cụ, phụ kiện</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="introduce.html">GIỚI THIỆU</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- body -->
+
+        <div class="grid wide">
+            <div class="row p-5">
+
+                <div class="contact-form col-lg-6">
+                    <div class="contact-heading">
+                        <h3>
+                            Nơi giải đáp toàn bộ mọi thắc mắc của bạn?
+                        </h3>
+
+                        <div class="time_work">
+                            <div class="contact-item">
+                                <b>Hotline:</b>
+                                <a class="fone" href="tel:0938744376" title="0938744376">0938744376</a>
+                            </div>
+                            <div class="contact-item">
+                                <b>Email:</b>
+                                <a href="mailto:zvhshop@gmail.com" title="zvhshop@gmail.com">zvhshop@gmail.com</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <h3 class="contact-title font-weight-bold">LIÊN HỆ VỚI CHÚNG TÔI!</h3>
+                    <p>Chúng tôi mong muốn lắng nghe từ bạn. Hãy liên hệ với chúng tôi và một thành viên của chúng tôi
+                        sẽ liên lạc với bạn trong thời gian sớm nhất. Chúng tôi yêu thích việc nhận được email của bạn
+                        mỗi ngày.</p>
+                    <form method="post">
+                        <div class="row group-contact">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <input placeholder="Họ và tên" type="text" class="form-control  form-control-lg"
+                                    required="" value="" name="ten">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <input placeholder="Email" type="email"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="" id="email1"
+                                    class="form-control form-control-lg" value="" name="email">
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                <input type="number" placeholder="Điện thoại" name="so_dt"
+                                    class="form-control form-control-lg" required="">
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                <textarea placeholder="Nội dung" name="noi_dung" id="comment"
+                                    class="form-control form-control-lg" rows="5" required=""></textarea>
+                                <button type="submit" class="btn-lienhe">Gửi thông tin</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="map user-select-none col-lg-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.6263397586017!2d105.75999004856682!3d10.047660640394579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0880cf0bdcbf1%3A0x475f8cc75bfa19b2!2zMTM5IE5ndXnhu4VuIMSQ4buHLCBBbiBIb8OgLCBOaW5oIEtp4buBdSwgQ-G6p24gVGjGoSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1662642238432!5m2!1svi!2s"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <footer class="footer footer__content">
+        <div class="grid wide">
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <h3 class="footer__heading">Về ZVH Shop</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Giới Thiệu Về ZVH Shop</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="mailto:zvhshop@gmail.com" class="footer-item__link">Email: zvhshop@gmail.com</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Giờ làm việc: 8h - 21h tất cả ngày trong tuần</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="https://goo.gl/maps/pJJ6Xyqfz1kyb9vL7" class="footer-item__link">Địa chỉ: 139, Nguyễn Đệ, An Hoà, Ninh Kiều, Cần Thơ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-right col-lg-8 row">
+                    <div class="col-lg-4">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hướng Dẫn Mua Hàng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hướng Dẫn Bán Hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="footer__heading">Theo dõi chúng tôi trên</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    Facebook</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    Instagram</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                    LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="footer__heading">Tải ứng dụng ZVH ngay thôi</h3>
+                        <ul class="footer-list">
+                            <div class="footer__download">
+                                <a href="" class="footer__download-qr-link">
+                                    <img src="./assets/img/footer/QR.png" alt="Download QR" class="footer__download-qr">
+                                </a>
+                                <div class="footer__download-apps">
+                                    <a href="" class="footer__download-app-img-link">
+                                        <img src="./assets/img/footer/gg_play.png" alt="Google Play"
+                                            class="footer__download-app-img">
+                                    </a>
+                                    <a href="" class="footer__download-app-img-link">
+                                        <img src="./assets/img/footer/apple_store.png" alt="App Store"
+                                            class="footer__download-app-img">
+                                    </a>
+
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer__bottom">
+            <div class="grid wide">
+                <p class="footer__text">
+                    © 2022 - Bản quyền thuộc về Công ty TNHH ZVH
+                </p>
+            </div>
+
+        </div>
+
+        <!-- footer-contact -->
+        <div id="footer-contact">
+            <ul class="footer-contact-list">
+                <li>
+                    <a href="" class="footer-contact-item">
+                        <img src="./assets/img/footer/google-maps.png" alt="">
+                        <span>Địa chỉ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="footer-contact-item">
+                        <img src="./assets/img/footer/zalo-logo.png" alt="">
+                        Zalo
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="footer-contact-item">
+                        <img src="./assets/img/footer/logo-messenger.png" alt="">
+                        Messenger
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- backtop -->
+        <div id="backtop">
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+
+        <!-- chatbox -->
+
+        <div id="body">
+
+            <div id="chat-circle" class="btn btn-raised">
+                <span class="chatbox-icon">
+                    <span class="chatbox-logo" style="background-image: url(./assets/img/logo-bg-white.png);"></span>
+                </span>
+                <span class="chatbox-text">Chat với CSKH</span>
+            </div>
+
+            <div class="chat-box">
+                <div class="chat-box-header">
+                    ChatBot
+                    <span class="chat-box-toggle">
+                        <i class="fa-solid fa-xmark"></i>
+                    </span>
+                </div>
+                <div class="chat-box-body">
+                    <div class="chat-box-overlay">
+                    </div>
+                    <div class="chat-logs">
+
+                    </div>
+                    <!--chat-log -->
+                </div>
+                <div class="chat-input">
+                    <form>
+                        <input type="text" id="chat-input" placeholder="Nhập tin nhắn..." />
+                        <button type="submit" class="chat-submit" id="chat-submit">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./assets/JS/app.js"></script>
+</body>
+
+</html>

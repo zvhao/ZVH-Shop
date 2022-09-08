@@ -118,7 +118,7 @@
                             <a class="nav-link" href="index.html">TRANG CHỦ</a>
                         </li>
                         <li class="nav-item header-has-menu-product">
-                            <a class="nav-link" href="">SẢN PHẨM
+                            <a class="nav-link" href="product.html">SẢN PHẨM
                                 <i class="fa-solid fa-angle-down"></i>
                             </a>
                             <!-- menu-product -->
@@ -201,9 +201,9 @@
 
                         </li>
 
-                        <li class="nav-item"><a class="nav-link" href="">TIN TỨC</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">TIN TỨC</a></li>
                         <li class="nav-item has-menu-guide">
-                            <a class="nav-link" href="">HƯỚNG DẪN
+                            <a class="nav-link" href="guide.html">HƯỚNG DẪN
                                 <i class="fa-solid fa-angle-down"></i>
                             </a>
 
@@ -214,8 +214,8 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="">GIỚI THIỆU</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">LIÊN HỆ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="introduce.html">GIỚI THIỆU</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">LIÊN HỆ</a></li>
                     </ul>
                 </div>
             </nav>
@@ -226,7 +226,7 @@
             <div class="container-sm">
                 <div class="forms">
                     <div class="form login">
-                        <span class="title">Đăng nhập</span>
+                        <span class="login-title">Đăng nhập</span>
 
                         <form role="form" onsubmit="signIn(event);" autocomplete="off">
                             <div class="input-field">
@@ -235,11 +235,9 @@
                             </div>
                             <div class="input-field">
                                 <input type="password" name="pwd1" id="pwd1" class="password"
-                                    placeholder="Nhập mật khẩu đăng nhập" required>
+                                    placeholder="Nhập mật khẩu" required>
                                 <i class="fa-solid fa-lock"></i>
-                                <button class="btn btnPassword" type="button" id="">
-                                    <i class="fa-regular fa-eye"></i>
-                                </button>
+                                <i class="fa-solid fa-eye-slash eye-icon showHidePw"></i>
                             </div>
 
                             <div class="checkbox-text">
@@ -261,11 +259,27 @@
                                 <a href="#" class="text signup-link">Đăng ký ngay</a>
                             </span>
                         </div>
+
+                        <div class="line"></div>
+
+                        <div class="media-options">
+                            <a href="#" class="facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>Login with Facebook</span>
+                            </a>
+                        </div>
+        
+                        <div class="media-options">
+                            <a href="#" class="google">
+                                <img src="./assets/img/icon/Google__G__Logo.svg.png" alt="">
+                                <span>Login with Google</span>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Registration Form -->
                     <div class="form signup">
-                        <span class="title">Đăng ký</span>
+                        <span class="login-title">Đăng ký</span>
 
                         <form role="form" onsubmit="dangky(event);" autocomplete="off">
                             <div class="input-field">
@@ -280,17 +294,14 @@
                                 <input type="password" name="pwd" id="pwd" class="password" placeholder="Tạo mật khẩu"
                                     required>
                                 <i class="fa-solid fa-lock"></i>
-                                <button class="btn btnPassword" type="button" id="">
-                                    <i class="fa-regular fa-eye"></i>
-                                </button>
+                                <i class="fa-solid fa-eye-slash eye-icon showHidePw"></i>
                             </div>
                             <div class="input-field">
                                 <input type="password" name="pwd2" id="pwd2" class="password"
                                     placeholder="Nhập lại mật khẩu" required>
                                 <i class="fa-solid fa-lock"></i>
-                                <button class="btn btnPassword" type="button" id="">
-                                    <i class="fa-regular fa-eye"></i>
-                                </button>
+                                <i class="fa-solid fa-eye-slash eye-icon showHidePw"></i>
+                                
                             </div>
 
                             <div class="input-field button">
@@ -302,6 +313,22 @@
                             <span class="text">Đã có tài khoản?
                                 <a href="#" class="text login-link">Đăng nhập ngay</a>
                             </span>
+                        </div>
+
+                        <div class="line"></div>
+
+                        <div class="media-options">
+                            <a href="#" class="facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>Login with Facebook</span>
+                            </a>
+                        </div>
+        
+                        <div class="media-options">
+                            <a href="#" class="google">
+                                <img src="./assets/img/icon/Google__G__Logo.svg.png" alt="">
+                                <span>Login with Google</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -403,23 +430,23 @@
 
         </div>
 
-        <!-- contact -->
-        <div id="contact">
-            <ul class="contact-list">
+        <!-- footer-contact -->
+        <div id="footer-contact">
+            <ul class="footer-contact-list">
                 <li>
-                    <a href="" class="contact-item">
+                    <a href="" class="footer-contact-item">
                         <img src="./assets/img/footer/google-maps.png" alt="">
                         <span>Địa chỉ</span>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="contact-item">
+                    <a href="" class="footer-contact-item">
                         <img src="./assets/img/footer/zalo-logo.png" alt="">
                         Zalo
                     </a>
                 </li>
                 <li>
-                    <a href="" class="contact-item">
+                    <a href="" class="footer-contact-item">
                         <img src="./assets/img/footer/logo-messenger.png" alt="">
                         Messenger
                     </a>

@@ -29,14 +29,13 @@ $(document).ready(function () {
 });
 
 
-// contact
+// footer-contact
 $(document).ready(function () {
     $(window).scroll(function () {
-        var offset = 500;
-        if ($(this).scrollTop() > 200) {
-            $('#contact').fadeIn();
+        if ($(this).scrollTop() > 0) {
+            $('#footer-contact').fadeIn();
         } else {
-            $('#contact').fadeOut();
+            $('#footer-contact').fadeOut();
         }
     });
 });
@@ -158,13 +157,13 @@ pwShowHide.forEach(eyeIcon => {
                 pwField.type = "text";
 
                 pwShowHide.forEach(icon => {
-                    icon.classList.replace("uil-eye-slash", "uil-eye");
+                    icon.classList.replace("fa-eye-slash", "fa-eye");
                 })
             } else {
                 pwField.type = "password";
 
                 pwShowHide.forEach(icon => {
-                    icon.classList.replace("uil-eye", "uil-eye-slash");
+                    icon.classList.replace("fa-eye", "fa-eye-slash");
                 })
             }
         })
@@ -224,22 +223,6 @@ function signIn(e) {
     e.preventDefault();
 }
 
-// an hien mat khau
-
-// step 1
-const ipnElement = document.querySelector('#pwd1')
-const btnElement = document.querySelector('.btnPassword')
-
-// step 2
-btnElement.addEventListener('click', function () {
-    // step 3
-    const currentType = ipnElement.getAttribute('type')
-    // step 4
-    ipnElement.setAttribute(
-        'type',
-        currentType === 'text' ? 'password' : 'text'
-    )
-})
 
 
 
